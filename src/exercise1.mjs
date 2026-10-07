@@ -1,3 +1,3 @@
 export function validateArrayElements(arr, elementValidator) {
-  throw new Error("TODO: implement Exercise 1");
+  return arr.map(value => ({ value, isValid: elementValidator(value) }));
 }
